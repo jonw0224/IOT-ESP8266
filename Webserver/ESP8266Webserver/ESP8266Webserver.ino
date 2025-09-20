@@ -15,8 +15,8 @@
 
 // Replace with your network credentials
 //const char* ssid     = "ESP8862Wifi";
-const char* ssid     = "Samantha's Wi-Fi Network";
-const char* password = "2cropisfun2me";
+const char* ssid     = "WIFISSID";
+const char* password = "WIFIPASSWORD";
 
 // Set web server port number to 80
 WiFiServer server(80);
@@ -194,7 +194,7 @@ void loop(){
             client.println("  };");
             client.println("  xhttp.open(\"GET\", \"/inputs\", true);");
             client.println("  xhttp.send();"); 
-            client.println("}, 100 ) ;");
+            client.println("}, 200 ) ;");
             client.println("</script></html>");
 
             // The HTTP response ends with another blank line
